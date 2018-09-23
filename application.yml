@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: peer1
+  application:
+    name: eurka-server
+---
+spring:
+  profiles: peer1
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    registerWithEureka: false #代表不向注册中心注册自己
+    fetchRegistry: false #由于注册中心的职责就是维护服务实例，它并不需要去检索服务， 所以也设置为 false
+    serviceUrl:
+       defaultZone: http://peer2:8762/eureka/
+---
+spring:
+  profiles: peer2
+server:
+  port: 8763
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
