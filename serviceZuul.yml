@@ -1,0 +1,45 @@
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: test
+  application:
+      name: service-zuul
+eureka:
+  client:
+    service-url:
+       defaultZone: http://peer2:8761/eureka/
+server:
+  port: 8770
+
+#路由过滤器
+zuul:
+  routes:
+    api-a:
+        path: /api-a/**
+        serviceId: service-ribbon
+    api-b:
+        path: /api-b/**
+        serviceId: eureka-feign
+---
+spring:
+  profiles: dev
+  application:
+        name: service-zuul
+eureka:
+  client:
+    service-url:
+       defaultZone: http://peer2:8761/eureka/
+server:
+  port: 8771
+
+#路由过滤器
+zuul:
+  routes:
+    api-a:
+        path: /api-a/**
+        serviceId: service-ribbon
+    api-b:
+        path: /api-b/**
+        serviceId: eureka-feign
