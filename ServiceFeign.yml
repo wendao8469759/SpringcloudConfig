@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: test
+  application:
+    name: eureka-feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8761/eureka/
+server:
+  port: 8765
+feign:
+  hystrix:
+    enabled: true #开启熔断器
+---
+spring:
+  profiles: dev
+  application:
+    name: eureka-feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8761/eureka/
+server:
+  port: 8766
+feign:
+  hystrix:
+    enabled: true #开启熔断器
+
