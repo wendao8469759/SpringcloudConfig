@@ -9,8 +9,8 @@ spring:
   rabbitmq:
     addresses: localhost
     port: 5672
-    username: root
-    password: root
+    username: guest
+    password: guest
   cloud:
     bus:
       enabled: true
@@ -34,8 +34,8 @@ spring:
   rabbitmq:
     addresses: localhost
     port: 5672
-    username: root
-    password: root
+    username: guest
+    password: guest
   cloud:
     bus:
       enabled: true
