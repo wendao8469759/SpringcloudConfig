@@ -12,9 +12,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer2:8761/eureka/
-spring:
-  application:
-    name: eureka-client
 ---
 spring:
   profiles: dev
@@ -24,6 +21,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer2:8761/eureka/
-spring:
-  application:
-    name: eureka-client
