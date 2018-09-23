@@ -1,0 +1,12 @@
+server:
+#  port: ${random.int[8762,8862]}
+  port: 8763
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8761/eureka/
+spring:
+  application:
+    name: eureka-client
+#    name: service-hi
+
