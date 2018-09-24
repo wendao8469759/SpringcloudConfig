@@ -22,4 +22,4 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://peer2:8761/eureka/
+      defaultZone: http://root:q13359146205Q@peer2:8761/eureka/
