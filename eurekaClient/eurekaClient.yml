@@ -7,10 +7,10 @@ spring:
 spring:
   profiles: test
   rabbitmq:
-    addresses: localhost
     port: 5672
     username: guest
     password: guest
+    host: localhost
   cloud:
     bus:
       enabled: true
@@ -21,9 +21,6 @@ management:
     web:
       exposure:
         include: bus-refresh
-
-server:
-  port: 8764
 eureka:
   client:
     serviceUrl:
@@ -32,7 +29,7 @@ eureka:
 spring:
   profiles: dev
   rabbitmq:
-    addresses: localhost
+    host: localhost
     port: 5672
     username: guest
     password: guest
@@ -46,8 +43,6 @@ management:
     web:
       exposure:
         include: bus-refresh
-server:
-  port: 8762
 eureka:
   client:
     serviceUrl:
