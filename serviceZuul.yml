@@ -6,21 +6,6 @@ spring:
   profiles: test
   application:
       name: service-zuul
-  rabbitmq:
-    port: 5672
-    username: guest
-    password: guest
-    host: localhost
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
 eureka:
   client:
     service-url:
