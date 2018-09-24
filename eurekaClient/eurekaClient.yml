@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root:q13359146205Qpeer2:8761/eureka/
+      defaultZone: http://root:q13359146205Q@peer2:8761/eureka/
 ---
 spring:
   profiles: dev
