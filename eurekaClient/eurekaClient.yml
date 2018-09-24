@@ -7,21 +7,6 @@ spring:
 ---
 spring:
   profiles: test
-  rabbitmq:
-    port: 5672
-    username: guest
-    password: guest
-    host: localhost
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
 eureka:
   client:
     serviceUrl:
@@ -29,16 +14,6 @@ eureka:
 ---
 spring:
   profiles: dev
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
 management:
   endpoints:
     web:
