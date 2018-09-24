@@ -3,7 +3,7 @@ spring:
     active: test
   application:
     #name: '{cipher}AQAYVeIpVAdwSkpC6zT4RnyQYimXDJeEyTUm7nhU6GaW23JmZ95z/U+27j2lf7/VQc/AQ+qEN/veCQhJJCksAECqHZN+uqfZRzaYqDhq9UYgvbEuFjlNA/C8RRI6LmzcBIk2e/5ftFT5C2uYv4sq7uAfc8LaVHzR4OsQ5V+9DuHCygeAaGnfAx4VWgD+ux62Dom2QsCxb5R1Vwaw7bJ3lCJB6XfHuo90/4TNL9TK+WjlRIAJ8imxU33bBf3X9knm3se4HibLHqqPFSRT9Dz7BH9Qq30a2d9FotC2htTlVG9jerq89EHJDCQDrh/8kio92pjMVZtJe4/y73kCheiIBhDaymFffbka/Gz+rCRUVoYUolw31xYIgrzdKP2FNpquE9g='
-     name: eureka-client
+     name: eureka-client1
 ---
 spring:
   profiles: test
