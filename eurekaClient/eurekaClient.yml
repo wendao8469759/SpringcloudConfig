@@ -23,7 +23,7 @@ management:
         include: bus-refresh
 
 server:
-  port: 8763
+  port: 8764
 eureka:
   client:
     serviceUrl:
