@@ -11,7 +11,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://root:q13359146205Q@peer2:8761/eureka/
-profiles: 123
 ---
 spring:
   profiles: dev
@@ -19,4 +18,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://root:q13359146205Q@peer2:8761/eureka/
-profiles: 567
