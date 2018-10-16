@@ -6,15 +6,19 @@ spring:
 ---
 spring:
   profiles: test
+server:
+  port: 8661
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://wangtao:123456@peer2:8761/eureka
+      defaultZone: http://wangtao:123456@peer2:8762/eureka
 ---
 spring:
-  profiles: dev
+  profiles: test2
+server:
+  port: 8662
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://wangtao:123456@peer2:8761/eureka
+      defaultZone: http://wangtao:123456@peer1:8761/eureka
       
