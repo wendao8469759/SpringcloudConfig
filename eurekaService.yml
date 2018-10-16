@@ -22,6 +22,10 @@ spring:
 server:
   port: 8763
 eureka:
+  instance:
+    hostname: peer2
   client:
+    registerWithEureka: false #代表不向注册中心注册自己
+    fetchRegistry: false #由于注册中心的职责就是维护服务实例，它并不需要去检索服务， 所以也设置为 false
     service-url:
       defaultZone: http://peer1:8761/eureka/
