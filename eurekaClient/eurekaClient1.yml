@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: eureka-client1
+---
+spring:
+  profiles: test
+server:
+  port: 86611
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://wangtao:123456@peer2:8762/eureka
+---
+spring:
+  profiles: test2
+server:
+  port: 86621
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://wangtao:123456@peer1:8761/eureka
+      
