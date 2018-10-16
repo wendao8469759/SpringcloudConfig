@@ -9,9 +9,9 @@ spring:
 eureka:
   client:
     service-url:
-       defaultZone: http://peer2:8761/eureka/
+       defaultZone: http://peer2:8762/eureka/
 server:
-  port: 8770
+  port: 8361
 
 #路由过滤器
 zuul:
@@ -30,9 +30,9 @@ spring:
 eureka:
   client:
     service-url:
-       defaultZone: http://peer2:8761/eureka/
+       defaultZone: http://peer1:8761/eureka/
 server:
-  port: 8771
+  port: 8362
 
 #路由过滤器
 zuul:

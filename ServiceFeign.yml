@@ -6,20 +6,24 @@ spring:
 ---
 spring:
   profiles: test
+server:
+  port: 8561
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://wangtao:123456@peer2:8761/eureka
+      defaultZone: http://wangtao:123456@peer2:8762/eureka
 feign:
   hystrix:
     enabled: true #开启熔断器
 ---
 spring:
-  profiles: dev
+  profiles: test2
+server:
+  port: 8562
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://wangtao:123456@peer2:8761/eureka
+      defaultZone: http://wangtao:123456@peer1:8761/eureka
 feign:
   hystrix:
     enabled: true #开启熔断器
